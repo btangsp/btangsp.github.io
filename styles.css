@@ -243,6 +243,7 @@ section h1 {
 .bio img {
 	border-radius: 20px;
 	box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    margin: auto 0;
 }
 
 .bio-item {
@@ -336,9 +337,34 @@ footer a i {
     }
     
 	.grid,
-	.bio .grid {
-		grid-template-columns: 1fr;
-	}
+    .showcase .grid,
+    .container .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .bio .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 0;
+    }
+    
+    .bio img {
+        display: none;
+    }
+    
+    img.col-2,
+    div.col-5,
+    #organizationInfo,
+    #workInfo,
+    #awardInfo {
+        grid-column: 1 / -1;
+    }
+    
+    #educationInfo,
+    #courseInfo {
+        grid-column: auto / span 1;
+    }
+    
 	
 	.bio {
 		height: auto;
@@ -355,21 +381,15 @@ footer a i {
 @media (max-width: 500px) {
     
     /* General */
-    
-    .grid,
-    .showcase .grid,
-    .bio .grid,
-    #courseInfo .grid,
-    .container .grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
-    
     .col-2,
     .col-3,
     .col-4,
     .col-5 {
-        grid-column: 1 / -1;
+        grid-column: 1;
+    }
+    
+    .navbar .container {
+        padding: 0 5px
     }
     
     /* Navigation Bar */
@@ -411,5 +431,14 @@ footer a i {
     /* About Me Section */
     .bio .flex {
         flex-direction: column-reverse;
+    }
+    
+    .bio .grid {
+        grid-template-columns: 1fr;
+    }
+    
+    #courseInfo .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
     }
 }
