@@ -276,8 +276,8 @@ section h1 {
 }
 
 .project-description .button {
-    margin: 20px 30% 0;
-    display:inline-block;
+    margin: 20px auto 0;
+    display: block;
 }
 
 /* Resume Section */
@@ -351,6 +351,7 @@ footer a i {
 @media (max-width: 500px) {
     
     /* General */
+    
     .grid,
     .showcase .grid,
     .bio .grid,
@@ -395,6 +396,12 @@ footer a i {
     
     #main h1 {
         font-size: 3em;
+    }
+    
+    /* General Sections */
+    section {
+        box-shadow: none;
+        margin: 0px;
     }
     
     /* About Me Section */
