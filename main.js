@@ -112,7 +112,7 @@ function courseInfo(courses, sectionSelector) {
     if (section) {
         if (courses instanceof Array) {
             for (let course of courses) {
-                let html = `<p>${course.year}</p><p>${course.name}</p>`
+                let html = `<p class="semibold">${course.year}</p><p>${course.name}</p>`
                 let container = document.createElement("div");
                 container.className="bio-item grid";
                 container.innerHTML = html;
