@@ -299,6 +299,12 @@ section#resume {
 	flex-direction: column;
 }
 
+#misc-info .grid {
+    grid-auto-rows: minmax(10px, auto);
+    padding: 40px 30px;
+    gap: 40px;
+}
+
 /*Footer*/
 
 footer {
