@@ -162,8 +162,8 @@ button,
 /* Main Landing Page Screen */
 
 #main {
-	width: 100vw;
-	height: 100vh;
+/*	width: 100vw;*/
+	height: calc(100vh - 59px);
 }
 
 #main .flex {
@@ -270,20 +270,10 @@ section h1 {
     gap: 40px;
 }
 
-.showcase .grid > *:first-child {
-    grid-column: 1 / span 3;
-}
-
 .project-img {
     border-radius: 20px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
-
-/*
-.project-description p {
-    margin-bottom: 50px; solves button margin issue
-}
-*/
 
 .project-description .button {
     margin: 20px 30% 0;
@@ -358,6 +348,57 @@ footer a i {
 }
 
 /* Mobile */
-@media(max-width: 500px) {
-
+@media (max-width: 500px) {
+    
+    /* General */
+    .grid,
+    .showcase .grid,
+    .bio .grid,
+    #courseInfo .grid,
+    .container .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5 {
+        grid-column: 1 / -1;
+    }
+    
+    /* Navigation Bar */
+    .navbar .flex {
+        flex-direction: column;
+    }
+    
+    h1.logo {
+        font-size: 2.5em;
+        margin: 20px 0 10px;
+    }
+    
+    .navbar a h1 {
+        font-size: 1em;
+    }
+    
+    .navbar li {
+        border-radius: 20px;
+        padding: 0 5px;
+        margin: 0 3px 10px;
+        background-color: rgba(0,0,0,0.05);
+    }
+    
+    /* Main Landing Page Screen */
+    #main {
+        height: calc(100vh - 127px);
+    }
+    
+    #main h1 {
+        font-size: 3em;
+    }
+    
+    /* About Me Section */
+    .bio .flex {
+        flex-direction: column-reverse;
+    }
 }

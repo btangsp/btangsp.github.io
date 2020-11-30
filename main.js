@@ -91,19 +91,7 @@ function educationInfo(schools, sectionSelector) {
 var courses = [
     {
         year: "2020",
-        name: "Human-Computer Interaction"
-    },
-    {
-        year: "2020",
-        name: "Machine Learning"
-    },
-    {
-        year: "2020",
-        name: "Introduction to Computational Photography"
-    },
-    {
-        year: "2020",
-        name: "Cybersecurity"
+        name: "Human-Computer Interaction<br>Machine Learning<br>Computational Photography<br>Cybersecurity"
     },
     {
         year: "2018",
