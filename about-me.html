@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/0f1b808851.js" crossorigin="anonymous"></script>
+		<title>About Me - Brian L. Tang</title>
+	</head>
+
+	<body>
+        <!-- Navigation Bar -->
+		<div class="navbar">
+			<div class="container flex">
+				<h1 class="logo">Brian L. Tang</h1>
+				<nav>
+					<ul>
+						<li><a href="index.html"><h1>Home</h1></a></li>
+						<li><a href="projects.html"><h1>Projects</h1></a></li>
+						<li><a href="about-me.html"><h1>About Me</h1></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+        <!-- About Me Section -->
+		<section class="bio">
+			<div class="container grid">
+				<img class="col-2" src="images/maddie and brian grad shoot-156-1.jpg" alt="Picture of me.">
+                <div class="col-4">
+                    <!-- About Me -->
+                    <div class="flex">
+                        <h1>About Me</h1>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/btangsp/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                            <li><a href="https://www.behance.net/briantang"><i class="fab fa-behance-square fa-2x"></i></a></li>
+                            <li><a href="https://github.com/btangsp"><i class="fab fa-github-square fa-2x"></i></a></li>
+                            <li><a href="mailto: btang.tsp@gmail.com"><i class="fas fa-envelope-square fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+					<p>Hi, I'm Brian Tang.</p>
+                    <p>I'm curious about a wide range of things and I love learning something new every day. My goal is to make good use of my skills to contribute to society in a meaningful way. I would love to be able to achieve that while combining the various different interests that I have.</p>
+					<p>I'm currently a first year master's student studying computer science at Northwestern University in Evanston, IL and I graduated in 2018 from the University of Michigan in Ann Arbor, MI with a Bacherlor of Science in Chemistry and a Minor in Computer Science.</p>
+                    <p>I'm a born and raised Michigander and Taiwanese American who loves learning about different cultures—especially through great food and music. I'm fluent in American English and Taiwanese Mandarin. In addition, I took a few years of French and Japanese.</p>
+                    <p>My hobbies include, but are not limited to cooking/baking, siteseeing, jump roping, tennis, canoeing, reading, playing the French horn and piano, dancing, creating art, and playing video games.</p>
+				</div>
+                <!-- Education -->
+                <div class="col-2" id="educationInfo">
+                    <h1>My Education</h1>
+                </div>
+                <!-- Relevant Courses -->
+                <div class="col-2" id="courseInfo">
+                    <h1>Relevant Courses</h1>
+                </div>
+                <!-- Organizations -->
+                <div class="col-3" id="organizationInfo">
+                    <h1>Organizations</h1>
+                </div>
+                <!-- Working Experience -->
+                <div class="col-5" id="workInfo">
+                    <h1>Working Experience</h1>
+                </div>
+                <!-- Awards -->
+                <div class="col-2" id="awardInfo">
+                    <h1>Awards</h1>
+                </div>
+                <a href="BrianTang_Resume.pdf" class="button col-all" target="_blank">Download as PDF</a>
+			</div>
+		</section>
+        <!-- Footer Section -->
+        <footer>
+            <div class="container flex">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/btangsp/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                    <li><a href="https://www.behance.net/briantang"><i class="fab fa-behance-square fa-2x"></i></a></li>
+				    <li><a href="https://github.com/btangsp"><i class="fab fa-github-square fa-2x"></i></a></li>
+				    <li><a href="mailto: btang.tsp@gmail.com"><i class="fas fa-envelope-square fa-2x"></i></a></li>
+                </ul>
+                <p>Copyright &copy; 2020</p>
+            </div>
+        </footer>
+        <script src="main.js"></script>
+        <script>
+            educationInfo(schools, "#educationInfo");
+            jobInfo(jobs, "#workInfo");
+            courseInfo(courses, "#courseInfo");
+            organizationInfo(organizations, "#organizationInfo");
+            awardInfo(awards, '#awardInfo');
+        </script>
+	</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/0f1b808851.js" crossorigin="anonymous"></script>
+        <title>Brian L. Tang - Horn Shirt Design 2016</title>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+		<div class="navbar">
+			<div class="container flex">
+				<h1 class="logo">Brian L. Tang</h1>
+				<nav>
+					<ul>
+						<li><a href="index.html"><h1>Home</h1></a></li>
+						<li><a href="projects.html"><h1>Projects</h1></a></li>
+						<li><a href="about-me.html"><h1>About Me</h1></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+        <section class="showcase">
+            <div class="container grid">
+                <h1 class="section-title col-all">NUCS 331 HW6 — Light Field Approximation via Smartphone</h1>
+                <div class="project-description col-all">
+                    <h1>Summary</h1>
+                    <p>Light Fields are usually captured with either a camera with a microlens array or a multi-camera array, which is quite expensive for an amateur. However, a light field can be approximated with just a smartphone. Although the code structure was already laid out for the students in the class, we needed to implement the functions ourselves and also use our own video for the approximation.</p>
+                </div>
+                <div class="project-description">
+                    <h1>Video Capture</h1>
+                    <p>As seen in the video, a recording of a scene was taken while moving the camera along the light field plane. The video I took was taken on an iPhone XS, which has a decent camera. However, this technique should still be achievable with any camera with video recording abilities.</p>
+                </div>
+                <div class="resp-container col-2 project-img">
+                    <iframe class="resp-iframe " src="https://www.youtube.com/embed/ZMj6Xm_1kqg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="project-description col-2">
+                    <h1>Trajectory</h1>
+                    <p>By using template matching, it is also possible to detect the path of the camera during the recording. For this video, I used a circular path. However, it is also possible to use a zig-zag pattern path.</p>
+                </div>
+                <img src="images/trajectory_path.png" alt="Graph of the trajectory path of the camera during the recording" class="project-img">
+                <div class="project-description col-all">
+                    <h1>Final Result</h1>
+                    <p>By choosing the "focus point" of a scene and using the light field that was approximated, a photo that was taken on a large aperture camera can be simulated.</p>
+                </div>
+                <img src="images/NUCS331_HW6.png" alt="Created image with focus on radio" class="project-img col-all">
+                <img src="images/NUCS331-HW6-2.png" alt="Created image with focus on water bottle" class="project-img col-all">
+                <img src="images/NUCS331-HW6-3.png" alt="Created image with focus on plant" class="project-img col-all">
+                <button onClick="goBack()" class="col-all">Go Back</button>
+            </div>
+        </section>
+        <!-- Footer Section -->
+        <footer>
+            <div class="container flex">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/btangsp/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                    <li><a href="https://www.behance.net/briantang"><i class="fab fa-behance-square fa-2x"></i></a></li>
+				    <li><a href="https://github.com/btangsp"><i class="fab fa-github-square fa-2x"></i></a></li>
+				    <li><a href="mailto: btang.tsp@gmail.com"><i class="fas fa-envelope-square fa-2x"></i></a></li>
+                </ul>
+                <p>Copyright &copy; 2020</p>
+            </div>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+</html>
