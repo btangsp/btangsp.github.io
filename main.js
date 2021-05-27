@@ -90,6 +90,10 @@ function educationInfo(schools, sectionSelector) {
 
 var courses = [
     {
+        year: "2021",
+        name: "Scalable Software Architecture<br>Deep Learning Foundations from Scratch<br>Machine Perception of Music & Audio<br>Human-Computer Interaction Studio<br>Digital Musical Instrument Design"
+    },
+    {
         year: "2020",
         name: "Human-Computer Interaction<br>Machine Learning<br>Computational Photography<br>Cybersecurity"
     },
