@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/0f1b808851.js" crossorigin="anonymous"></script>
+        <title>Brian L. Tang - Aeiou (Vowel Instrument)</title>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+		<div class="navbar">
+			<div class="container flex">
+				<h1 class="logo">Brian L. Tang</h1>
+				<nav>
+					<ul>
+						<li><a href="index.html"><h1>Home</h1></a></li>
+						<li><a href="projects.html"><h1>Projects</h1></a></li>
+						<li><a href="about-me.html"><h1>About Me</h1></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+        <section class="showcase">
+            <div class="container grid">
+                <h1 class="section-title col-all">My Digital Musical Instrument: Aeiou</h1>
+                <div class="project-description col-all">
+                    <h1>About the Instrument</h1>
+                    <h2 class="subsection">What is Aeiou?</h2>
+                    <p>Aeiou is a digital musical instrument that I designed for Northwestern University's COMP SCI 497: Digital Musical Instrument Design. As the name suggests, it's an instrument that uses vowels to bring a more human-like feeling to a digital instrument.</p>
+                    <h2 class="subsection">Goal and Inspiration</h2>
+                    <p>I was really inspired by an article that I had read during the class. Overholt (2009) stated that "one of the primary factors in the evolution of acoustic instruments promoted instruments that were better at expressing human emotion". I thought, "well, what better way is there to convey human emotion than to mimic a certain quality of the human voice?".</p>
+                    <h2 class="subsection">How does Aeiou work?</h2>
+                    <p>Aeiou consists of two main components: the physical interface (the Arduino) and the digital interface (Max). The two sensors currently used are an ultrasonic sensors, which controls the overall pitch, and an accelerometer/gyroscope, which controls the vowel shape of the pitch that is being played. Although there are only 5 vowels that can be used at once, as seen in the video below, you can adjust certain settings of the instrument such as the vowels that you want to use as well as also how much vibrato you want to add. Depending on which key or scale you wanted to play in, you can adjust that on the Max interface as well (not shown in the video). The Arduino interface is connected to my laptop via a USB cable and the audio output comes out of my computer after being processed by my Max code.</p>
+                    <p>The reason why vowels sound they way that they do is due to acoustic resonance that results from changing the space within your mouth or—more accurately—your vocal tract. In order to achieve a similar effect digitally, a resonant bandpass filter is used on a soundwaves with harmonics (e.g. square, triangle, sawtooth waves). A resonant bandpass filter basically allows for certain frequencies to pass through as well as some of the surrounding frequencies, depending on the specified range. To model the vowel sounds, a combination of 3 formant frequencies were used, which can be found on <a class="inline-link" href="https://en.wikipedia.org/wiki/Formant#cite_note-6">a Wikipedia article about Formants</a> as well as <a class="inline-link" href="https://home.cc.umanitoba.ca/~krussll/phonetics/acoustic/formants.html">this webpage created by Kevin Russell, a linguistics professor at the University of Manitoba</a>.</p>
+                </div>
+                
+                <div class="resp-container project-img col-2 row-2">
+                    <iframe class="resp-iframe" src="https://www.youtube.com/embed/jj7rywoMr8s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <img src="images/aeiou.jpeg" alt="Picture of my digital musical instrument, Aeiou." class="project-img col-1">
+                <div class="resp-container project-img col-1">
+                    <iframe class="resp-iframe" src="https://www.youtube.com/embed/phgTj67qt_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                </div>
+                <div class="project-description">
+                    <h1>My Performance on Aeiou</h1>
+                    <p>For my perfomance, I played a song called Sapiliepah a radiw, which is a Amis/Pangcah folk song.</p>
+                    <p>As you can see in the video, despite practicing for a few days, my performance was not perfect. However, I was still pleasantly surprised how well the instrument was able to mimic the human voice. In fact, there were times where it felt so similar that it was surprising how easy it was to achieve while only using mainly 3 formant frequencies.</p>
+                </div>
+                <div class="resp-container col-2 project-img">
+                    <iframe class="resp-iframe" src="https://www.youtube.com/embed/irhMBOrixek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <iframe class="project-img" src="https://open.spotify.com/embed/track/2UKkLqST2xWpK8n1b0Xr5Z" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <div class="project-description col-2">
+                    <h1>Why I Chose to Perform an Amis/Pangcah Folk Song</h1>
+                    <p>Who are the Amis or Pangcah? You've probably never heard of them before, but you've probably heard their singing, especially if you've heard of Enigma's Return to Innocence. The Amis or Pangcah people are an indegenous Austronesian ethnic group to Taiwan. Although they only make up roughly 2% of the modern day Taiwanese population, their culture and presence have been significant in forming the Taiwanese culture and identity. In fact, one of Asia's most famous superstars, A-Mei (張惠妹), is a singer from the Puyuma ethnic group.</p>
+                    <p>As a Taiwanese American, I've spent many long summers in Taiwan during my childhood. Although I did not interact with the Taiwanese indigenous people frequently, their beautiful songs have made a lasting impact on me. Since one of the most striking features of arguably one of their most famous song is the use of vowels, I thought I would take this opportunity to demonstrate the capabilities of my instrument as well as showcase one of their heartwarming songs.</p>
+                </div>
+                <div class="project-description col-all">
+                    <h1>Challenges & Obstacles</h1>
+                    <p>Initially, try to model the vowel sounds was difficult to wrap my head around since although I have an interest in linguistics, some of the technical terms and concepts were a bit advanced for me. Thankfully, there has already been a lot of work that has been done on modeling vowel sounds by studying vowel formant frequencies, so I was able to already find some Max code that could lay down some of the foundations of my instrument.</p>
+                    <p>At the same time, I also wanted to avoid completely mimicking and modeling the human voice because my intentions were not to make a vocaloid, because I would like to avoid the uncanny valley. Unexpectedly, the vowel sounds at times seemed a bit too realistic.</p>
+                    <p>Another part that I originally wanted to do was somehow implement the instrument in a way so that it responds slightly different at the low register compared to the high register, which is another phenomonon that we see with acoustic instruments in general. However, as you probably noticed earlier, this was not part of the instrument design due to the time it took to work out issues with interpreting signals from the Arduino. This brings us to the next challenge that I faced.</p>
+                    <p>Since I wanted to have 5 immediately accesible vowels on my instrument at a time, I had to map out regions on the accelerometer's range of motion in a way that was intuitive to me (and hopefully others) and could perform reasonably ergonomically. Since the extreme values that the accelerometer sends are when it is fully tilted right, left, forward, and back, I decided to use these as the vowel regions. "But wait, that's only 4 regions!" And you're right, so I decided to make the 5th region where the accelerometer is flat—or at least as flat as possible. Little did I know, this also became the biggest source of Aeiou's glitchiness.</p>
+                    <p>To understand why it's "glitchy" in the first place, I should give you some background information on how these regions are to work with each other. Since I wanted the regions to transition between each other smoothly, I defined values where the vowel would be at its strongest and where it would be quietest. This worked well for all four of the regions except the middle since I had to combine two different ranges back to back (0 to 1 and 1 to 0) in order for the middle value to be the loudest. However, as a result, when you cross between the middle point, the sudden change in value and break in continuity results in a "click" in the audio output. Of course, there might be a way to fix this in Max, but as a beginner, I haven't found the solution yet. If you know, by any chance, feel free to reach out and let me know!</p>
+                    <p>Lastly, soldering was a bit more difficult than I thought. Although I would say I have pretty good hand motor skills and I do quite a bit of crafts, solder behaves in a way unlike anything I have worked with before.</p>
+                </div>
+                <div class="project-description col-all">
+                    <h1>Things to Work On in the Future</h1>
+                    <p>Most notably, the instrument's interface has not been fully fleshed out yet. While the overall interaction mechanism has mostly been decided, there is still room for improvement in terms of how the sensors should be held and the casing that should house them. I would also like to eventually add a button that allows for the user to start and stop the audio output easily to allow for the instrument to "play" rests.</p>
+                    <p>In addition, as mentioned previously in the "Challenges & Obstacles" section, I would eventually like to achieve a sound that is less human but still retains its capability of having vowel-like qualities. I would also like to introduce some unique character to Aeiou by implementing something that causes the instrument to behave a little different at high and low registers.</p>
+                    <p>Finally, it would be nice to find a way to remove the clicking that occurs when switching from one vowel to another to make the overall sound smoother.</p>
+                </div>
+                <div class="project-description col-all">
+                    <h1>Want to Try It Yourself?</h1>
+                    <p>Of course you do! Well look no further, I have provided both my Arduino and Max code below. Unfortuantely, you'll have to assemble your own Arduino interface, which you should be able to easily obtain online if you have a budget of $100 USD.</p>
+                    <p>To download the files, right click and select "Save Link As...". If you are new to Max, in order to use the Max code, select and copy the whole thing and from the "Files" tab in Max, select "New From Clipboard". With the auxillary file, just download and save it in the same folder/directory where your newly created Max file is. As for the Arduino code, that should open without any problems as long as you have the Arduino software downloaded and installed on your computer.</p>
+                    <a class="download button" href="public/aeiou_max_code.txt"><i class="fa fa-download"></i> Download Max Code</a>
+                    <a class="download button" href="public/elder_drinking_song.txt"><i class="fa fa-download"></i> Download Max Auxillary File</a>
+                    <a class="download button" href="public/aeiou_arduino_code.ino"><i class="fa fa-download"></i> Download Arduino Code</a>
+                </div>
+                <div class="project-description col-all">
+                    <h1>References</h1>
+                    <p><a class="inline-link" href="https://www.cambridge.org/core/journals/organised-sound/article/abs/musical-interface-technology-design-space/1332182552C4F4800ECEC3D3E699CF8D">Overholt, Dan. “The Musical Interface Technology Design Space.” Organised Sound 14 (2009): 217 - 226.</a></p>
+                    <p><a class="inline-link" href="http://sounddesignwithmax.blogspot.com/2013/">Mark. “æ - ʊ - ʌ - i - a - ɜ.” Sound Design with Max, 11 May 2013, sounddesignwithmax.blogspot.com/2013/.</a></p>
+                </div>
+                <button onClick="goBack()" class="col-all">Go Back</button>
+            </div>
+        </section>
+        <!-- Footer Section -->
+        <footer>
+            <div class="container flex">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/btangsp/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                    <li><a href="https://www.behance.net/briantang"><i class="fab fa-behance-square fa-2x"></i></a></li>
+				    <li><a href="https://github.com/btangsp"><i class="fab fa-github-square fa-2x"></i></a></li>
+				    <li><a href="mailto: btang.tsp@gmail.com"><i class="fas fa-envelope-square fa-2x"></i></a></li>
+                </ul>
+                <p>Copyright &copy; 2020</p>
+            </div>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+</html>
