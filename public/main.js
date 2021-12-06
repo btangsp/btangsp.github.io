@@ -91,7 +91,7 @@ function educationInfo(schools, sectionSelector) {
 var courses = [
     {
         year: "2021",
-        name: "Scalable Software Architecture<br>Deep Learning Foundations from Scratch<br>Machine Perception of Music & Audio<br>Human-Computer Interaction Studio<br>Digital Musical Instrument Design"
+        name: "Scalable Software Architecture<br>Deep Learning Foundations from Scratch<br>Machine Perception of Music & Audio<br>Human-Computer Interaction Studio<br>Digital Musical Instrument Design<br>Rapid Software Prototyping<br>Interactive Information Visualization"
     },
     {
         year: "2020",
@@ -169,6 +169,18 @@ function organizationInfo(organizations, sectionSelector) {
 }
 
 var jobs = [
+    {
+        time: "Sept 2021 — Current",
+        name: "Teaching Assistant (Human-Computer Interaction Studio)",
+        location: "Northwestern University (Evanston, IL)",
+        description: "I hold discussion sections where I help students with their project, which entails need-finding, designing, and refining their problem statements."
+    },
+    {
+        time: "June 2021 — Sept 2021",
+        name: "Teaching Assistant (Machine Learning)",
+        location: "Northwestern University (Evanston, IL)",
+        description: "I help answer students' questions regarding machine learning and related homework. In addition, I also help grade the assignments."
+    },
     {
         time: "May 2020 — June 2020",
         name: "Analytical Chemist II",
